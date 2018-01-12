@@ -58,6 +58,6 @@ new ssh2.Server({
         if (columns < minColumns)
             columns = minColumns;
     }
-}).listen(22, function () {
+}).listen(10022, function () {
     console.log('Listening on port ' + this.address().port);
 });

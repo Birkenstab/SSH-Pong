@@ -1,6 +1,6 @@
 {
   "name": "ssh-pong",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Pong game playable via ssh",
   "repository": "https://github.com/Birkenstab/SSH-Pong",
   "license": "MIT",
