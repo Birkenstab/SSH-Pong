@@ -1,0 +1,12 @@
+{
+  "name": "ssh-pong",
+  "version": "0.0.2",
+  "description": "Pong game playable via ssh",
+  "scripts": {
+    "start": "node sshServer.js"
+  },
+  "dependencies": {
+    "child_pty": "^3.0.7",
+    "ssh2": "^0.5.5"
+  }
+}
