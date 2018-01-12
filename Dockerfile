@@ -11,7 +11,10 @@ WORKDIR /home/nodejs/app
 COPY package*.json ./
 RUN npm install --production
 
-COPY . .
+COPY host.key .
+COPY sshServer.js .
+
+COPY main.c .
 RUN gcc -lncurses -std=c11 main.c -o pong
 
 ENV TERM xterm
