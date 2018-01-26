@@ -45,10 +45,23 @@ new ssh2.Server({
             });
         });
     }).on('end', function () {
+        quitPong(ls);
         console.log("Disconnected");
     }).on('error', function (err) {
+        quitPong(ls);
         console.error(err);
     });
+
+    function quitPong(child) {
+        child.kill();
+        console.log("killed");
+        setTimeout(() => {
+            if (child.killed) {
+                child.kill("SIGKILL");
+                console.log("forcibly killed");
+            }
+        }, 1000);
+    }
 
     function setSize(newColumns, newRows) {
         rows = newRows;
