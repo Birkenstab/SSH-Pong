@@ -1,5 +1,5 @@
 # SSH-Pong
-Connect to a ssh server and play Pong
+Connect to a SSH server and play Pong
 
 Uses Node for the ssh server but the game is written in C
 
