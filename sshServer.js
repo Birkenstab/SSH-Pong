@@ -53,6 +53,10 @@ new ssh2.Server({
     });
 
     function quitPong(child) {
+        if (!child) {
+            console.log("Bereits beendet");
+            return;
+        }
         child.kill();
         console.log("killed");
         setTimeout(() => {
