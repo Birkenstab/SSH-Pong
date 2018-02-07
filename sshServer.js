@@ -7,7 +7,8 @@ const minRows = 24;
 
 new ssh2.Server({
     hostKeys: [fs.readFileSync('host.key')],
-}, function (client) {
+}, function (client, info) {
+    console.log("New connection", info);
     let columns = 103;
     let rows = 24;
     let ls;
