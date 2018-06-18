@@ -15,3 +15,6 @@ Use Docker:
 docker run --name ssh-pong -p 22:10022 birkenstab/ssh-pong
 ```
 The Docker image exposes Port 10022 for SSH
+
+## Todo
+* Highscore list
