@@ -33,8 +33,10 @@ new ssh2.Server({
                 if (accept)
                     accept();
 
-                ls.stdout.resize({columns: columns + 1, rows});
-                ls.stdout.resize({columns, rows});
+                if (ls) {
+                    ls.stdout.resize({columns: columns + 1, rows});
+                    ls.stdout.resize({columns, rows});
+                }
             }).once('shell', function (accept, reject) {
                 stream = accept();
 
