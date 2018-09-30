@@ -1,6 +1,6 @@
 {
   "name": "ssh-pong",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "Pong game playable via ssh",
   "repository": "https://github.com/Birkenstab/SSH-Pong",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "start": "node sshServer.js"
   },
   "dependencies": {
-    "child_pty": "^3.0.7",
+    "child_pty": "^3.0.8",
     "ssh2": "^0.5.5"
   }
 }

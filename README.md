@@ -4,9 +4,9 @@ Connect to a SSH server and play Pong
 Uses Node for the SSH server but the game is written in C
 
 ## Demo
-Connect to pong.birkenstab.de via SSH:
+Connect to pong.brk.st via SSH:
 ```
-ssh pong.birkenstab.de
+ssh pong.brk.st
 ```
 
 ## Installation
