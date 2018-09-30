@@ -22,6 +22,6 @@ RUN gcc -lncurses -std=c11 main.c -o pong
 
 ENV TERM xterm
 
-EXPOSE 10022
+EXPOSE 22
 
 CMD ["/usr/local/bin/dumb-init", "npm", "start"]
