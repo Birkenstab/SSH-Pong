@@ -26,6 +26,8 @@ version: "2.1"
      restart: always
      ports:
        - '22:22'
+     volumes:
+           - ./settings:/home/nodejs/app/settings
 ```
 
 ## Todo
