@@ -16,5 +16,17 @@ docker run --name ssh-pong -p 22:22 birkenstab/ssh-pong
 ```
 The Docker image exposes Port 22 for SSH
 
+### Example docker-compose file
+```Dockerfile
+version: "2.1"
+
+ services:
+   web:
+     image: 'birkenstab/ssh-pong'
+     restart: always
+     ports:
+       - '22:22'
+```
+
 ## Todo
 * Highscore list
